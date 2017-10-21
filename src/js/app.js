@@ -1,14 +1,16 @@
-(function($) {
-  'use strict';
-
-  $(function() {
-    var $fullText = $('.admin-fullText');
-    $('#admin-fullscreen').on('click', function() {
-      $.AMUI.fullscreen.toggle();
-    });
-
-    $(document).on($.AMUI.fullscreen.raw.fullscreenchange, function() {
-      $fullText.text($.AMUI.fullscreen.isFullscreen ? '退出全屏' : '开启全屏');
-    });
-  });
-})(jQuery);
+$(document).ready(function() {
+    var Quan = {
+        cikLi: function() {
+            $("li").mouseover(function() {
+                $(this).addClass("am-active");
+            });
+        },
+        remo: function() {
+            $("li").mouseout(function() {
+                $(this).removeClass("am-active");
+            });
+        }
+    };
+    Quan.cikLi();
+    Quan.remo();
+});
