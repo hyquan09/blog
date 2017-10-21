@@ -1,10 +1,115 @@
-<html>
+<!doctype html>
+<html class="no-js">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>blog</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QuanBolg</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="src/css/amazeui.min.css">
+  <link rel="stylesheet" href="src/css/app.css">
+  <style>
+    .am_m0p0 {
+      margin: 0rem;
+      padding: 0rem;
+    }
+
+    .am_m0p0 img {
+      margin: 0rem;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>bolg</h1>
+  <header class="am-topbar am-topbar-inverse">
+    <h1 class="am-topbar-brand">
+     <a href="#">QuanBolg</a>
+   </h1>
+    <div class="am-collapse am-topbar-collapse am-topbar-right" id="doc-topbar-collapse">
+      <ul class="am-nav am-nav-pills am-topbar-nav">
+        <li class="am-active"><a href="#">Home</a></li>
+        <li><a href="#">Posr</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <script type="text/javascript">
+        $(document).ready(function() {
+              var Quan = {
+                cikLi: function() {
+                  $("li").mouseover(function() {
+                    $(this).addClass("am-active");
+                  });
+                },
+                remo: function() {
+                  $("li").mouseout(function() {
+                    $(this).removeClass("am-active");
+                  });
+                }
+              };
+              Quan.cikLi();
+              Quan.remo();
+            });
+      </script>
+  </header>
+  <div class="am-g">
+    <div class="am-u-sm-11 am-u-sm-centered">
+      <div class="am-u-sm-12">
+        <img src="src/img/aaaa.jpg" style="width:100%;" alt="" />
+      </div>
+      <div class="am-u-sm-12">
+        <ul class="am-avg-sm-3 am-thumbnails">
+          <li>
+            <div class="am-list-news-hd am-cf am_m0p0">
+              <a href="###" class="">
+                <h2>aaa</h2>
+                <span class="am-list-news-more am-fr">更多 &raquo;</span>
+                <img class="am-thumbnail " src="http://s.amazeui.org/media/i/demos/bing-1.jpg" />
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="am-list-news-hd am-cf am_m0p0">
+              <a href="###" class="">
+                <h2>aaa</h2>
+                <span class="am-list-news-more am-fr">更多 &raquo;</span>
+                <img class="am-thumbnail " src="http://s.amazeui.org/media/i/demos/bing-2.jpg" />
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="am-list-news-hd am-cf am_m0p0">
+              <a href="###" class="">
+                <h2>aaa</h2>
+                <span class="am-list-news-more am-fr">更多 &raquo;</span>
+                <img class="am-thumbnail " src="http://s.amazeui.org/media/i/demos/bing-1.jpg" />
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="am-list-news-hd am-cf am_m0p0">
+              <a href="###" class="">
+                <h2>aaa</h2>
+                <span class="am-list-news-more am-fr">更多 &raquo;</span>
+                <img class="am-thumbnail " src="http://s.amazeui.org/media/i/demos/bing-1.jpg" />
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!--[if (gte IE 9)|!(IE)]><!-->
+  <script src="src/js/jquery.min.js"></script>
+  <!--<![endif]-->
+  <!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="src/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+  <script src="src/js/amazeui.min.js"></script>
 </body>
 
 </html>
