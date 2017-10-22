@@ -1,54 +1,76 @@
 <!doctype html>
-<html class="no-js">
+<html>
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="">
   <meta name="keywords" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>QuanBolg</title>
-  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="src/css/amazeui.min.css">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <title>QuanBlog</title>
+  <link rel="stylesheet" href="src/plugin/amazeui/css/amazeui.min.css">
   <link rel="stylesheet" href="src/css/app.css">
-  <style>
-    .am_m0p0{margin: 0rem;padding: 0rem;}
-    .am_m0p0 img{margin: 0rem;}
-  </style>
 </head>
 
 <body>
   <header class="am-topbar am-topbar-inverse">
     <h1 class="am-topbar-brand">
-     <a href="#">QuanBolg</a>
+        <a href="#">QuanBlog</a>
    </h1>
-    <div class="am-collapse am-topbar-collapse am-topbar-right" id="doc-topbar-collapse">
+    <div class="am-collapse am-topbar-collapse am-topbar-right" id="nav">
       <ul class="am-nav am-nav-pills am-topbar-nav">
-        <li class="am-active"><a href="#">Home</a></li>
-        <li><a href="#">Posr</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Post</a></li>
+        <li class="dropdown"> <a href="#">Contact</a>
+          <div class="menu">
+            <ul>
+              <li><a href="#">hot post</a></li>
+              <li><a href="#">now Dost</a></li>
+              <li><a href="#">all dost</a></li>
+            </ul>
+          </div>
+
+        </li>
       </ul>
+
   </header>
   <div class="am-g">
     <div class="am-u-sm-11 am-u-sm-centered">
       <div class="am-u-sm-12">
-        <img src="src/img/aaaa.jpg" style="width:100%;" alt="" />
+        <img src="src/img/banner.jpg" style="width:100%;" alt="" />
       </div>
-      <div class="am-u-sm-12">
+        <div class="am-u-sm-12 header_intoma0 ">
+          <h1>热门</h1>
+          <hr>
+          <div class="am-u-sm-12">
+            <a href="#" class="am-link-muted">
+              <div class="am-u-sm-6 am_m0p0">
+                <img src="src/img/banner.jpg"style="width:100%;" alt="">
+              </div>
+              <div class="am-u-sm-6 ">
+                  <h2 class="am-text-center am_m0p0">标题</h2>
+                  <div class="line-clamp7 am-text-left">
+                    上面的好的写法，感觉写的真的很不错，多看几遍，绝对有好处！关于jquery新版本废除了好多的用法，至今我还经常使用live()方法， 有时候在动态调用click的时候管用，但是尽量不要用废弃了的方法！新版jquery不支持！
+                    1.一个页面只写一个文档ready事件的处理程序。这样代码既清晰好调试，又容易跟踪代码的进程。
+
+                    2.不要用匿名函数来做事件的回调。匿名函数不易调试维护测试和复用。或许你想较真，看看这里吧
+                    1.一个页面只写一个文档ready事件的处理程序。这样代码既清晰好调试，又容易跟踪代码的进程。
+
+2.不要用匿名函数来做事件的回调。匿名函数不易调试维护测试和复用。或许你想较真，看看这里吧
+                  </div>
+                  <div class="header_intoma0 am-text-bottom">
+                    <span>2017-10-09</span>
+                    <span class="am-fr">作者:quan</span>
+                  </div>
+              </div>
+            </a>
+          </div>
 
       </div>
     </div>
   </div>
-
-  <!--[if (gte IE 9)|!(IE)]><!-->
-  <script src="src/js/jquery.min.js"></script>
-  <!--<![endif]-->
-  <!--[if lte IE 8 ]>
-<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
-<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
-<script src="src/js/amazeui.ie8polyfill.min.js"></script>
-<![endif]-->
-  <script src="src/js/amazeui.min.js"></script>
+  <script src="src/js/jquery-3.2.1.js"></script>
+  <script src="src/js/app.js"></script>
 </body>
 
 </html>

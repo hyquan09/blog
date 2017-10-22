@@ -2,14 +2,14 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-    <title>QuanBlog</title>
-    <link rel="stylesheet" href="src/plugin/amazeui/css/amazeui.min.css">
-    <link rel="stylesheet" href="src/css/app.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <title>QuanBlog</title>
+  <link rel="stylesheet" href="src/plugin/amazeui/css/amazeui.min.css">
+  <link rel="stylesheet" href="src/css/app.css">
 </head>
 
 <body>
@@ -17,17 +17,26 @@
     <h1 class="am-topbar-brand">
      <a href="#">QuanBolg</a>
    </h1>
-    <div class="am-collapse am-topbar-collapse am-topbar-right" id="doc-topbar-collapse">
+    <div class="am-collapse am-topbar-collapse am-topbar-right" id="nav">
       <ul class="am-nav am-nav-pills am-topbar-nav">
-        <li class="am-active"><a href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
         <li><a href="#">Posr</a></li>
-        <li><a href="#">Contact</a></li>
+        <li class="dropdown"> <a href="#">Contact</a>
+          <div class="menu">
+            <ul>
+              <li><a href="#">hot post</a></li>
+              <li><a href="#">now Dost</a></li>
+              <li><a href="#">all dost</a></li>
+            </ul>
+          </div>
+
+        </li>
       </ul>
   </header>
   <div class="am-g">
-    <div class="am-u-sm-11 am-u-sm-centered">
+    <d iv class="am-u-sm-11 am-u-sm-centered">
       <div class="am-u-sm-12">
-        <img src="src/img/aaaa.jpg" style="width:100%;" alt="" />
+        <img src="src/img/banner.jpg" style="width:100%;" alt="" />
       </div>
       <div class="am-u-sm-12">
         <form class="am-form">
@@ -41,18 +50,41 @@
               <label for="doc-ipt-email-1">邮件</label>
               <input type="email" class="" id="doc-ipt-email-1" placeholder="输入电子邮件">
             </div>
+            <label for="">性别</label>
             <div class="am-radio">
               <label>
-        <input type="radio" name="doc-radio-1" value="option1" checked>
-        男
-      </label>
+                <input type="radio" name="doc-radio-1" value="option1" checked>
+                男
+              </label>
             </div>
             <div class="am-radio">
               <label>
-        <input type="radio" name="doc-radio-1" value="option2">
-        女
-      </label>
+                <input type="radio" name="doc-radio-1" value="option2">
+                  女
+              </label>
             </div>
+            <label for="">多选</label>
+            <div class="am-form-group">
+              <label class="am-radio-inline">
+                <input type="radio"  value="" name="docInlineRadio"> 每一分
+              </label>
+              <label class="am-radio-inline">
+                <input type="radio" name="docInlineRadio"> 每一秒
+              </label>
+              <label class="am-radio-inline">
+                <input type="radio" name="docInlineRadio"> 多好
+              </label>
+            </div>
+            <div class="am-form-group">
+              <label for="doc-select-1">选了又选</label>
+              <select id="doc-select-1">
+                <option value="option1">选项一</option>
+                <option value="option2">选项二.....</option>
+                <option value="option3">选项三....</option>
+              </select>
+              <span class="am-form-caret"></span>
+            </div>
+
             <div class="am-form-group">
               <label for="doc-ta-1">内容</label>
               <textarea class="" rows="5" id="doc-ta-1"></textarea>
@@ -64,15 +96,8 @@
     </div>
   </div>
 
-  <!--[if (gte IE 9)|!(IE)]><!-->
-  <script src="src/js/jquery.min.js"></script>
-  <!--<![endif]-->
-  <!--[if lte IE 8 ]>
-<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
-<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
-<script src="src/js/amazeui.ie8polyfill.min.js"></script>
-<![endif]-->
-  <script src="src/js/amazeui.min.js"></script>
+  <script src="src/js/jquery-3.2.1.js"></script>
+  <script src="src/js/app.js"></script>
 </body>
 
 </html>

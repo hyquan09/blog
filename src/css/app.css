@@ -6,4 +6,50 @@
 .am_m0p0 img {
     margin: 0rem;
 }
+ul{padding: 0;margin: 0;}
 
+.line-clamp2{
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.line-clamp7{
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+}
+.header_intoma0{margin-top: 10px;}
+#nav .menu {
+  width:120px;
+  height:0px;
+  background:#6fb9ec;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  z-index: 9;
+}
+
+#nav .dropdown:hover .menu
+{
+  transition:height 2s;
+  -moz-transition:height 2s; /* Firefox 4 */
+  -webkit-transition:height 2s; /* Safari and Chrome */
+  -o-transition:height 2s; /* Opera */
+  overflow-y:hidden;
+  opacity: 1;
+  height:100px;
+}
+.dropdown li{
+  padding: 2px 12px ;
+  list-style-type:none;
+  text-align: center;
+}
+.textcent{text-align: center;}
+#postList .textclip{
+   text-overflow: clip;
+}
+#postList div{ line-height: 35px; }
