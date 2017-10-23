@@ -30,9 +30,9 @@ ul{padding: 0;margin: 0;}
   opacity: 0;
   position: absolute;
   right: 0;
-  z-index: 9;
+  z-index: -9;
 }
-
+#formmar fieldset {margin: 20px 10px;}
 #nav .dropdown:hover .menu
 {
   transition:height 2s;
@@ -42,14 +42,24 @@ ul{padding: 0;margin: 0;}
   overflow-y:hidden;
   opacity: 1;
   height:100px;
+  z-index: 9;
 }
 .dropdown li{
   padding: 2px 12px ;
   list-style-type:none;
   text-align: center;
 }
+
+#indexContent .am-list-news-hd{
+  background-color: #fff;
+  margin: 15px;
+  padding: 10px;
+  box-shadow: 10px 10px 5px #efefef;
+
+}
 .textcent{text-align: center;}
 #postList .textclip{
    text-overflow: clip;
 }
 #postList div{ line-height: 35px; }
+footer{height: 100px;}
